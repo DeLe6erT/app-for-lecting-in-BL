@@ -1,4 +1,4 @@
-# biyskiliceum-leckting.github.io
+#Сайт на котором публикуются лекции с предметов дя БЛ
 
 Ссылка https://biyskiliceum-leckting.github.io
 
