@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="images/png" rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="images/logo.png" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styleloader.css">
   <title>Бийский Лицей - Лекции</title>
 </head>
 
 <body>
+  <div>
   <!--    header      -->
   <header class="header">
     <div class="header_container">
@@ -139,9 +140,32 @@
   </section>
   <!--    nav      -->
 
+НУЖЕН БЭКЭНД ДЛЯ КОРРЕКТНОЙ РАБОТЫ!!!! 
+НО Я ЕГО НЕ НАПИШУ!!!!!!!
 
-
+  <div id="uploadFile_Loader" class="upload-zone">
+    <form class="form-upload" id="uploadForm" method="post" enctype="multipart/form-data">
+      <div class="upload-zone_dragover">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="upload-loader__image">
+          <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242M12 12v9"/>
+          <path d="m16 16-4-4-4 4"/>
+        </svg>
+        <p>Перетащи файл сюда</p>
+        <span class="form-upload__hint" id="hint">only video guys</span>
+      </div>
+      <label class="form-upload__label" for="uploadForm_file">
+        <span class="form-upload__title">Или нажми кнопку</span>
+        <input class="form-upload__input" id="uploadForm_File" type="file" name="file_name" accept="video/*" aria-describedby="hint">
+      </label>
+      <div class="form-upload__container">
+        <span class="form-upload__hint" id="uploadForm_Hint"></span>
+      </div>
+    </form>
+  </div>
+  </div>
+  
   <script src="js/main.js" charset="utf-8"></script>
+  <script src="loader.js" charset="utf-8"></script>
 </body>
 
 </html>
