@@ -5,9 +5,12 @@
 }
 
 .right {
-  width: 350px;
-  height: auto;
-  margin-left: 10px;
+  max-width: 350px;
+  max-height: 200px;
+  min-width: 70px;
+  min-height: 90px;
+  margin-left: 100px;
+  
 }
 
 .left .left_content {
@@ -15,7 +18,12 @@
 }
 
 .right_content {
-  width: 350px;
+  width: 295px;
+  height: 170px;
+}
+
+.right_content .details {
+  margin-top: 15px;
 }
 
 .flex {
@@ -172,9 +180,9 @@
 }
 
 button {
-  background: none;
+  background: image("image/logo.png");
   outline: none;
-  border: none;
+  border: 210px;
 }
 
 .chat {
@@ -223,9 +231,10 @@ button {
   margin: 0;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:68px) {
   .video_items {
-    flex-direction: column;
+    flex-direction: space-between;
+    justify-content: space-between;
   }
 
   .left, .left_content {
@@ -238,8 +247,8 @@ button {
   }
 
   .right, .right_content {
-    width: 768px !important;
-    padding-right: 50px;
+    width: 68px !important;
+    padding-right: 0px;
   }
 
   .vide_sidebar a,

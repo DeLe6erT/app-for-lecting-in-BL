@@ -17,6 +17,7 @@ h3 {
   margin: 0;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -88,6 +89,11 @@ header .toggle {
   cursor: pointer;
 }
 
+button {
+  background: none;
+  outline: none;
+  border: 210px;
+}
 /*-------------------header------------*/
 /*--------------nav------------*/
 .nav {
@@ -299,7 +305,7 @@ header .toggle {
 }
 
 /*--------------video_items------------*/
-@media screen and (min-width:768px) {
+@media screen and (min-width:68px) {
   body {
     padding: 16px 48px 0 96px;
   }
@@ -400,4 +406,37 @@ header .toggle {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
   }
+}
+
+
+.student-profile .card {
+  border-radius: 10px;
+  
+}
+
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 5px solid #8800ff;
+  border-radius: 50%;
+  background: none;
+}
+
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-profile .card p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
 }
